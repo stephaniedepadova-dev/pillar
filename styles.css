@@ -316,3 +316,18 @@ nav a,.text-link{font-size:15px}
  .company-context .company-stats span{font-size:10px!important;line-height:1.5!important;letter-spacing:.02em!important;}
  .company-context .company-source{font-size:10px!important;line-height:1.75!important;}
 }
+
+
+/* Roadmap note: readable supporting text on desktop and mobile */
+.roadmap-note{
+  font-size:15px!important;
+  line-height:1.8!important;
+  letter-spacing:0!important;
+  max-width:760px;
+}
+@media(max-width:800px){
+  .roadmap-note{font-size:14px!important;line-height:1.75!important;}
+}
+@media(max-width:520px){
+  .roadmap-note{font-size:13px!important;line-height:1.7!important;}
+}
