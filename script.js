@@ -13,7 +13,7 @@ const translations = {
   }
 };
 Object.assign(translations.it, {
-  navFunnel:"Recruitment funnel",
+  navFunnel:"Recruitment funnel",pillarKicker:"CONOSCERE PILLAR",pillarOverline:"IL CONTESTO AZIENDALE",pillarTitle:"Costruire il team<br>per chi costruisce<br><em>il futuro.</em>",pillarCopy:"Pillar sta sviluppando un sistema operativo per il settore delle costruzioni, integrando tecnologia, finanza e insight nel lavoro quotidiano delle imprese. La storia pubblica di Pillar mette al centro trasformazione guidata dall’AI, riduzione della burocrazia e resilienza operativa.",pillarStat1:"POSIZIONI APERTE",pillarStat2:"RUOLI SALES",pillarStat3:"MARKETING & GROWTH",pillarSource:"Dati del portale carriere verificati il 25 novembre 2026.",pillarCareers:"Portale carriere ↗",pillarAbout:"Chi è Pillar ↗",
   salKicker:"CANDIDATE SAL",salOverline:"UNA VALUTAZIONE TRASPARENTE DELLE COMPETENZE",salTitle:"Competenze da attivare.<br><em>Aree in cui crescere.</em>",salLead:"Una fotografia chiara delle competenze consolidate, dell'esperienza trasferibile e delle aree di apprendimento da affrontare con curiosità e responsabilità.",
   salReady:"Competenze consolidate",salReady1:"Recruiting IT & Engineering",salReady2:"Selezione end-to-end e gestione degli stakeholder",salReady3:"Talent sourcing, Boolean search e market mapping",salReady4:"10 ricerche attive e 15–20 posizioni contemporanee",salReady5:"Employer branding e candidate experience",
   salTransfer:"Competenze trasferibili",salTransfer1:"Mentalità da digital strategist e comunicazione",salTransfer2:"Processi strutturati, KPI e approccio per funnel",salTransfer3:"AI generativa e strumenti Digital HR",salTransfer4:"Adattamento dei messaggi di sourcing a mercati differenti",
