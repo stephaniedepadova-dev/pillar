@@ -95,3 +95,57 @@ nav a,.text-link{font-size:13px}
  .site-board dd{font-size:12px}
  .boolean code{font-size:9px}
 }
+
+
+/* Larger type across the whole experience — keep one readable body scale */
+html{font-size:18px}
+body{font-size:18px;line-height:1.75}
+p{font-size:18px;line-height:1.8}
+nav a{font-size:14px}
+.hero-lead{font-size:21px;line-height:1.75;max-width:480px}
+.intro-bottom>p,.blueprint-heading>p,.mapping-heading>p,.sal-heading>p,.funnel-heading>p,.month-heading>p:last-child,.company-copy>p{font-size:18px;line-height:1.85}
+.step p,.role-card>p:not(.role-location),.role-profile span,.sal-card li,.funnel-detail>p,.detail-kpi span,.faq-list details p,.pool-card p,.outreach-card p,.timeline p{font-size:16px;line-height:1.85}
+.step h3,.timeline h3{font-size:21px}
+.cap-list strong{font-size:18px}
+.cap-list small{font-size:15px;line-height:1.7}
+.role-card h3{font-size:28px}
+.role-profile b,.boolean>b{font-size:12px}
+.boolean code{font-size:13px;line-height:1.9}
+.role-link{font-size:14px}
+.sal-card h3{font-size:23px}
+.sal-card li{font-size:16px}
+.funnel-stage b{font-size:15px}
+.funnel-detail h3{font-size:29px}
+.faq-list summary{font-size:18px;line-height:1.6}
+.site-board-head{font-size:13px}
+.site-board dt{font-size:11px}
+.site-board dd{font-size:15px;line-height:1.65}
+.hero-hook{font-size:12px}
+.field-work-heading h3{font-size:clamp(27px,3.2vw,36px)}
+.field-work-heading>p{font-size:17px;line-height:1.85}
+.pool-card h4{font-size:20px}
+.pool-card p{font-size:16px;line-height:1.85}
+.pool-card small,.field-work-note{font-size:11px;line-height:1.85}
+.field-tool>pre{font-size:12px;line-height:1.9}
+.copy-button{font-size:12px}
+.outreach-card p{font-size:15px;line-height:1.85}
+.section-kicker,.section-overline,.eyebrow,.week,.role-index,.role-live,.role-hypothesis,.role-location,.sal-label,.field-work-label,.pool-number,.outreach-card>b,.company-source,.mapping-footnote,.closing-foot,.footer,.topline{font-size:11px}
+@media(max-width:700px){
+ html{font-size:17px}
+ body,p{font-size:17px;line-height:1.8}
+ .hero-lead{font-size:19px}
+ .intro-bottom>p,.blueprint-heading>p,.mapping-heading>p,.sal-heading>p,.funnel-heading>p,.month-heading>p:last-child,.company-copy>p{font-size:17px}
+ .step p,.role-card>p:not(.role-location),.role-profile span,.sal-card li,.funnel-detail>p,.detail-kpi span,.faq-list details p,.pool-card p,.outreach-card p,.timeline p{font-size:15px;line-height:1.85}
+ .site-board dd{font-size:14px}
+ .faq-list summary{font-size:17px}
+ .section-kicker,.section-overline,.eyebrow,.week,.role-index,.role-live,.role-hypothesis,.role-location,.sal-label,.field-work-label,.pool-number,.outreach-card>b,.company-source,.mapping-footnote,.closing-foot,.footer,.topline{font-size:10px}
+ .field-tool>pre{font-size:11px}
+}
+@media(max-width:420px){
+ html{font-size:16px}
+ body,p{font-size:16px}
+ .hero-lead{font-size:18px}
+ .step p,.role-card>p:not(.role-location),.role-profile span,.sal-card li,.funnel-detail>p,.detail-kpi span,.faq-list details p,.pool-card p,.outreach-card p,.timeline p{font-size:14px}
+ .site-board dd{font-size:13px}
+ .boolean code{font-size:10px}
+}
