@@ -245,3 +245,10 @@ nav a,.text-link{font-size:15px}
  .engine-step small{font-size:12px}
  .engine-board-foot{gap:8px;font-size:8px}
 }
+
+
+/* Hero bottom statement: stronger hierarchy on desktop and mobile */
+.hero .hero-bottom{font-size:12px;letter-spacing:.10em;line-height:1.5;}
+.hero .hero-bottom span:first-child{font-weight:600;}
+@media(max-width:800px){.hero .hero-bottom{font-size:10px;letter-spacing:.08em;}}
+@media(max-width:520px){.hero .hero-bottom{font-size:9px;letter-spacing:.055em;gap:10px;}.hero .hero-bottom span:first-child{max-width:calc(100% - 52px);}}
