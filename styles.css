@@ -419,3 +419,13 @@ nav a,.text-link{font-size:15px}
 @media(max-width:520px){
   .voice-player-label{font-size:6px!important;letter-spacing:.07em!important;margin-bottom:10px!important;}
 }
+
+
+/* Keep the TA / DESIGNED stamp lettering visually separated */
+.hero-stamp small{
+  display:block;
+  margin-top:5px;
+}
+@media(max-width:800px){
+  .hero-stamp small{margin-top:4px;}
+}
