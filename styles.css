@@ -420,6 +420,25 @@ nav a,.text-link{font-size:15px}
   .voice-player-label{font-size:6px!important;letter-spacing:.07em!important;margin-bottom:10px!important;}
 }
 
+/* Enlarge only the audio introduction label on every screen size */
+.voice-player-label{
+  font-size:9px!important;
+  letter-spacing:.11em!important;
+}
+@media(max-width:800px){
+  .voice-player-label{
+    font-size:8px!important;
+    letter-spacing:.09em!important;
+  }
+}
+@media(max-width:520px){
+  .voice-player-label{
+    font-size:8px!important;
+    letter-spacing:.075em!important;
+  }
+}
+
+
 
 /* Keep the TA / DESIGNED stamp lettering visually separated */
 .hero-stamp small{
