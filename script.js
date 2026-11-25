@@ -12,18 +12,53 @@ const translations = {
     contactKicker:"IL PROSSIMO PASSO",contactOverline:"COSTRUIAMO CIÒ CHE VIENE DOPO",contactTitle:"I grandi team<br>non nascono<br><em>per caso.</em>",contactText:"Mi piacerebbe confrontarmi su come un approccio strutturato e proattivo alla Talent Acquisition possa supportare la prossima fase di crescita.",footerNote:"PROPOSTA INDIPENDENTE DI CANDIDATURA · NON È IL SITO UFFICIALE DI PILLAR",backTop:"TORNA SU ↑"
   }
 };
-const toggle = document.querySelector("#language-toggle");
-const nodes = [...document.querySelectorAll("[data-i18n]")];
-const english = new Map(nodes.map(node => [node, node.innerHTML]));
-let language = "en";
-function setLanguage(next) {
-  language = next;
-  document.documentElement.lang = next;
-  nodes.forEach(node => {
-    const key = node.dataset.i18n;
-    node.innerHTML = next === "it" && translations.it[key] ? translations.it[key] : english.get(node);
-  });
-  toggle.innerHTML = next === "en" ? 'IT <span>↗</span>' : 'EN <span>↗</span>';
-  toggle.setAttribute("aria-label", next === "en" ? "Passa alla lingua italiana" : "Switch to English");
+Object.assign(translations.it, {
+  navFunnel:"Recruitment funnel",
+  salKicker:"CANDIDATE SAL",salOverline:"UNA VALUTAZIONE TRASPARENTE DELLE COMPETENZE",salTitle:"Competenze da attivare.<br><em>Aree in cui crescere.</em>",salLead:"Una fotografia chiara delle competenze consolidate, dell'esperienza trasferibile e delle aree di apprendimento da affrontare con curiosità e responsabilità.",
+  salReady:"Competenze consolidate",salReady1:"Recruiting IT & Engineering",salReady2:"Selezione end-to-end e gestione degli stakeholder",salReady3:"Talent sourcing, Boolean search e market mapping",salReady4:"10 ricerche attive e 15–20 posizioni contemporanee",salReady5:"Employer branding e candidate experience",
+  salTransfer:"Competenze trasferibili",salTransfer1:"Mentalità da digital strategist e comunicazione",salTransfer2:"Processi strutturati, KPI e approccio per funnel",salTransfer3:"AI generativa e strumenti Digital HR",salTransfer4:"Adattamento dei messaggi di sourcing a mercati differenti",
+  salGrowth:"Contesto B2B SaaS",salGrowth1:"Non è oggi il mio verticale di recruiting principale",salGrowth2:"Area di apprendimento mirata: modello SaaS, ruoli GTM e scorecard Sales",salGrowth3:"Ramp-up attraverso confronto con gli stakeholder, shadowing e market mapping",
+  funnelKicker:"IL FUNNEL DI RECRUITMENT",funnelOverline:"UN PERCORSO CANDIDATO MISURABILE",funnelTitle:"Un funnel progettato per<br><em>qualità e velocità.</em>",funnelLead:"Un processo di selezione strutturato, con decision gate, responsabilità e feedback loop. Seleziona una fase per scoprirne obiettivo e indicatori da monitorare.",
+  funnelStage1:"Raccolta fabbisogno e scorecard",funnelStage2:"Talent mapping e sourcing",funnelStage3:"Screening CV e qualificazione",funnelStage4:"Colloquio People / Recruiter",funnelStage5:"Assessment specifico del ruolo",funnelStage6:"Hiring team e leadership",funnelStage7:"Offerta, chiusura e onboarding",
+  funnelDetailTitle:"Raccolta fabbisogno e scorecard",funnelDetailCopy:"Allineare contesto di business, competenze essenziali, risultati attesi, range retributivo, tempistiche e responsabilità del processo prima di avviare la ricerca.",funnelDetailKpi:"Completezza del brief · allineamento stakeholder · tempo di avvio",kpiLabel:"INDICATORI DA MONITORARE",funnelDisclaimer:"Modello operativo esemplificativo, non dati storici di conversione. Target e soglie vanno concordati con il team di selezione.",
+  funnelPrinciple1:"NESSUNA FASE SENZA FEEDBACK",funnelPrinciple2:"FEEDBACK STRUTTURATO",funnelPrinciple3:"DECISIONI BASATE SU EVIDENZE",funnelPrinciple4:"ATTENZIONE AL CANDIDATO",
+  faqKicker:"DOMANDE E RISPOSTE",faqOverline:"RISPOSTE CHIARE PER PERSONE E MOTORI DI RICERCA",faqTitle:"Talent Acquisition,<br><em>senza giri di parole.</em>",faqQ1:"Che cosa fa una Talent Acquisition Specialist?",faqA1:"Una Talent Acquisition Specialist gestisce il processo di selezione end-to-end: comprende le esigenze del business, definisce i profili, ricerca e valuta i candidati, coordina i colloqui, supporta le offerte e monitora le performance del recruiting.",faqQ2:"Che cosa si intende per recruiting tecnico?",faqA2:"Il recruiting tecnico individua e valuta candidati per ruoli specialistici in software, IT, ingegneria, sistemi embedded e tecnologie digitali. Richiede la capacità di tradurre requisiti tecnici in criteri di ricerca e valutazione chiari.",faqQ3:"Come si costruisce un funnel di recruiting efficace?",faqA3:"Si parte dal brief e dalla scorecard, si mappa il mercato dei talenti, si attivano i canali di sourcing, si qualificano i candidati, si coordinano colloqui strutturati, si gestiscono le offerte e si misurano conversioni, tempi di feedback e candidate experience in ogni fase.",faqQ4:"Dove si trova Stephanie De Padova?",faqA4:"Stephanie De Padova si trova a Torino, in Italia, ed è aperta a opportunità a Torino, Milano e da remoto sul territorio italiano.",faqQ5:"Stephanie ha esperienza nel recruiting B2B SaaS?",faqA5:"L'esperienza di recruiting consolidata è in ambito IT e Engineering. Il B2B SaaS è un'area di crescita trasferibile: porta competenze di recruiting end-to-end, sourcing, gestione degli stakeholder e digital strategy, con trasparenza rispetto alla curva di apprendimento specifica del settore."
+});
+const funnelStages = [
+ {title:"Role intake & scorecard",copy:"Align on business context, must-have skills, outcomes, compensation range, timeline and interview ownership before launching a search.",kpi:"Brief completeness · stakeholder alignment · time to launch",itTitle:"Raccolta fabbisogno e scorecard",itCopy:"Allineare contesto di business, competenze essenziali, risultati attesi, range retributivo, tempistiche e responsabilità del processo prima di avviare la ricerca.",itKpi:"Completezza del brief · allineamento stakeholder · tempo di avvio"},
+ {title:"Talent mapping & sourcing",copy:"Define target companies and talent pools, build Boolean strings, activate direct sourcing and track channel effectiveness.",kpi:"Relevant profiles identified · response rate · source effectiveness",itTitle:"Talent mapping e sourcing",itCopy:"Definire aziende target e bacini di talenti, costruire stringhe Boolean, attivare il direct sourcing e monitorare l'efficacia dei canali.",itKpi:"Profili pertinenti individuati · tasso di risposta · efficacia dei canali"},
+ {title:"CV review & qualification",copy:"Assess evidence against the scorecard, motivation, role fit, location, availability and compensation alignment.",kpi:"Qualified-to-screen ratio · screening turnaround · reasons for rejection",itTitle:"Screening CV e qualificazione",itCopy:"Valutare le evidenze rispetto alla scorecard, motivazione, coerenza con il ruolo, località, disponibilità e allineamento retributivo.",itKpi:"Rapporto qualificati/screening · tempi di valutazione · motivi di esclusione"},
+ {title:"People / recruiter interview",copy:"Explore motivation, communication, relevant experience, expectations and candidate questions; provide a realistic view of the role.",kpi:"Interview-to-next-stage conversion · candidate feedback · time to feedback",itTitle:"Colloquio People / Recruiter",itCopy:"Approfondire motivazione, comunicazione, esperienze rilevanti, aspettative e domande del candidato, offrendo una visione realistica del ruolo.",itKpi:"Conversione allo step successivo · feedback candidato · tempi di feedback"},
+ {title:"Role-specific assessment",copy:"Use a structured, job-relevant exercise or role play with a clear rubric and consistent evaluation criteria.",kpi:"Assessment completion · scorecard consistency · decision turnaround",itTitle:"Assessment specifico del ruolo",itCopy:"Utilizzare una prova o simulazione pertinente al lavoro, con rubric chiara e criteri di valutazione coerenti.",itKpi:"Completamento assessment · coerenza scorecard · tempi decisionali"},
+ {title:"Hiring team & leadership",copy:"Consolidate evidence, calibrate feedback, resolve open questions and make a timely, documented decision.",kpi:"Panel alignment · time to decision · feedback completeness",itTitle:"Hiring team e leadership",itCopy:"Consolidare le evidenze, calibrare i feedback, risolvere i dubbi aperti e arrivare a una decisione tempestiva e documentata.",itKpi:"Allineamento del panel · tempo decisionale · completezza feedback"},
+ {title:"Offer, close & onboarding",copy:"Present the offer clearly, address questions, maintain contact through acceptance and hand over a useful onboarding brief.",kpi:"Offer acceptance · time to accept · 30/60/90-day feedback",itTitle:"Offerta, chiusura e onboarding",itCopy:"Presentare l'offerta con chiarezza, rispondere alle domande, mantenere il contatto fino all'accettazione e preparare un passaggio di consegne utile all'onboarding.",itKpi:"Accettazione offerte · tempo di accettazione · feedback a 30/60/90 giorni"}
+];
+const toggle=document.querySelector("#language-toggle");
+const nav=document.querySelector(".site-header nav");
+const menu=document.querySelector("#menu-toggle");
+const nodes=[...document.querySelectorAll("[data-i18n]")];
+const english=new Map(nodes.map(node=>[node,node.innerHTML]));
+let language=document.documentElement.lang==="it"?"it":"en";
+function setLanguage(next){
+ language=next;document.documentElement.lang=next;
+ nodes.forEach(node=>{const key=node.dataset.i18n;node.innerHTML=next==="it"&&translations.it[key]?translations.it[key]:english.get(node)});
+ toggle.innerHTML=next==="en"?'IT <span>↗</span>':'EN <span>↗</span>';
+ toggle.setAttribute("aria-label",next==="en"?"Switch to Italian":"Passa all'inglese");
+ const title=next==="it"?"Talent Acquisition e Recruiting Tecnico a Torino | Stephanie De Padova":"Talent Acquisition & Technical Recruitment in Italy | Stephanie De Padova";
+ document.title=title;
+ const description=next==="it"?"Stephanie De Padova è Talent Acquisition Specialist a Torino, specializzata in recruiting IT e Engineering, talent sourcing, market mapping e processi di selezione strutturati.":"Stephanie De Padova is a Talent Acquisition Specialist in Turin, Italy, focused on IT & Engineering recruitment, technical sourcing, talent mapping and scalable hiring processes.";
+ document.querySelector('meta[name="description"]')?.setAttribute("content",description);
+ document.querySelector('meta[property="og:locale"]')?.setAttribute("content",next==="it"?"it_IT":"en_GB");
 }
-toggle?.addEventListener("click", () => setLanguage(language === "en" ? "it" : "en"));
+toggle?.addEventListener("click",()=>setLanguage(language==="en"?"it":"en"));
+menu?.addEventListener("click",()=>{const open=nav.classList.toggle("is-open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?"CLOSE":"MENU";});
+nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("is-open");menu?.setAttribute("aria-expanded","false");if(menu)menu.textContent="MENU";}));
+document.querySelectorAll(".funnel-stage").forEach(button=>button.addEventListener("click",()=>{
+ const stage=funnelStages[Number(button.dataset.stage)];if(!stage)return;
+ document.querySelectorAll(".funnel-stage").forEach(item=>item.classList.toggle("active",item===button));
+ document.querySelector("#funnel-detail-index").textContent=(language==="it"?"FASE ":"STAGE ")+String(Number(button.dataset.stage)+1).padStart(2,"0")+" / 07";
+ document.querySelector("#funnel-detail-title").textContent=language==="it"?stage.itTitle:stage.title;
+ document.querySelector("#funnel-detail-copy").textContent=language==="it"?stage.itCopy:stage.copy;
+ document.querySelector("#funnel-detail-kpi").textContent=language==="it"?stage.itKpi:stage.kpi;
+}));
+if(language==="it")setLanguage("it");
