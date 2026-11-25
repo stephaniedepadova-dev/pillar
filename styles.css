@@ -259,3 +259,10 @@ nav a,.text-link{font-size:15px}
 .hero .hero-bottom span:first-child{font-weight:700;}
 @media(max-width:800px){.hero .hero-bottom{font-size:14px;letter-spacing:.065em;}}
 @media(max-width:520px){.hero .hero-bottom{font-size:12px;letter-spacing:.035em;gap:10px;}.hero .hero-bottom span:first-child{max-width:calc(100% - 46px);}}
+
+
+/* Enlarge the four hero principles across desktop and mobile */
+.hero .hero-proof{gap:12px;}
+.hero .hero-proof strong{font-size:28px;line-height:1.2;}
+@media(max-width:800px){.hero .hero-proof strong{font-size:25px;}}
+@media(max-width:520px){.hero .hero-proof{gap:9px;}.hero .hero-proof strong{font-size:22px;line-height:1.25;}}
