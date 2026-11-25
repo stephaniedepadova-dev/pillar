@@ -1,6 +1,6 @@
 const translations = {
   it: {
-    heroHook: "MI AVETE CHIESTO DI FARE SOURCING. ECCO IL MIO CANTIERE.",
+    heroHook: "UNA PROPOSTA DI CANDIDATURA, COSTRUITA INTORNO A PILLAR.",
     boardTitle: "CANTIERE · TALENT ACQUISITION @ PILLAR",
     boardClientLabel: "COMMITTENTE",
     boardPreparedForLabel: "PROPOSTA PER",
@@ -9,7 +9,7 @@ const translations = {
     boardProjectLabel: "OGGETTO DEI LAVORI",
     boardProject: "Costruire un motore di talenti per chi costruisce",
     boardMaterialsLabel: "MATERIALI",
-    boardMaterials: "Oltre 4 anni in Talent Acquisition · 6 anni in digital strategy",
+    boardMaterials: "Oltre 4 anni in Talent Acquisition · 3 anni in digital strategy",
     boardBaseLabel: "BASE",
     boardBase: "Torino · disponibile per Milano e lavoro da remoto in Italia",
     fieldWorkLabel: "LAVORO SUL CAMPO · IPOTESI DI SOURCING",
@@ -41,7 +41,7 @@ const translations = {
     blueprintKicker:"IL METODO DI TALENT ACQUISITION",blueprintOverline:"DALLA POSIZIONE APERTA ALLA PIPELINE",blueprintTitle:"Un metodo replicabile.<br><em>Progressi misurabili.</em>",blueprintLead:"Un approccio strutturato che collega priorità di business, candidate experience e performance del recruiting.",
     step1Title:"Comprendere il business",step1Text:"Conoscere prodotto, team, cultura e obiettivi. Tradurre il contesto aziendale in un brief di selezione chiaro.",step2Title:"Definire le priorità",step2Text:"Allineare gli stakeholder su impatto, urgenza, competenze essenziali e aspettative realistiche.",step3Title:"Costruire pipeline di talenti",step3Text:"Combinare Boolean search, talent mapping, direct sourcing e community professionali pertinenti.",step4Title:"Creare un'esperienza coerente",step4Text:"Comunicazione chiara, feedback tempestivi e fasi di selezione con uno scopo preciso.",step5Title:"Misurare e migliorare",step5Text:"Utilizzare conversioni del funnel, tempi di feedback, efficacia dei canali e qualità delle assunzioni per migliorare il sistema.",
     capKicker:"GLI STRUMENTI",capOverline:"COSA PORTO NEL TEAM",capTitle:"Le persone giuste.<br><em>Il processo giusto.</em>",cap1:"Recruiting IT & Engineering",cap1s:"Profili tecnici e competenze difficili da trovare",cap2:"Talent Acquisition end-to-end",cap2s:"Dalla raccolta del fabbisogno alla proposta e al passaggio all'onboarding",cap3:"Talent Sourcing & Mapping",cap3s:"Boolean search · Headhunting · Analisi del mercato",cap4:"Employer Branding",cap4s:"Comunicazione chiara e coinvolgimento dei candidati",cap5:"Digital HR & AI",cap5s:"Utilizzo concreto di strumenti digitali e intelligenza artificiale generativa",
-    monthKicker:"UNA PROPOSTA PER I PRIMI 30 GIORNI",monthOverline:"ASCOLTARE. STRUTTURARE. ATTIVARE. IMPARARE.",monthTitle:"Un inizio consapevole.<br><em>Slancio dal primo giorno.</em>",monthLead:"Una roadmap iniziale per comprendere il contesto, costruire fiducia e rendere visibile il lavoro di recruiting.",week1Title:"Comprendere",week1Text:"Incontrare gli stakeholder, conoscere prodotto, struttura dei team, obiettivi di hiring e processo di selezione attuale.",week2Title:"Strutturare",week2Text:"Analizzare le posizioni aperte, definire priorità, concordare scorecard e impostare una dashboard essenziale.",week3Title:"Attivare",week3Text:"Avviare attività di sourcing mirato, mappare i bacini di talenti e definire una comunicazione costante.",week4Title:"Misurare",week4Text:"Analizzare i segnali del funnel, condividere insight e concordare le priorità successive con il team.",roadmapNote:"Un modello proposto di onboarding, da adattare alle reali priorità e al contesto operativo del team.",
+    monthKicker:"UNA PROPOSTA PER I PRIMI 30 GIORNI",monthOverline:"ASCOLTARE. STRUTTURARE. ATTIVARE. IMPARARE.",monthTitle:"Un inizio consapevole.<br><em>Slancio dal primo giorno.</em>",monthLead:"Una roadmap iniziale per comprendere il contesto, costruire fiducia e rendere visibile il lavoro di recruiting.",week1Title:"Comprendere",week1Text:"Incontrare gli stakeholder, conoscere prodotto e team, raccogliere i fabbisogni e restituire una mappa iniziale delle priorità.",week2Title:"Strutturare",week2Text:"Concordare scorecard e criteri di valutazione, ordinare le vacancy per priorità e impostare una dashboard di partenza.",week3Title:"Attivare",week3Text:"Avviare sourcing mirato, documentare aziende target e bacini di talenti, testare messaggi e canali.",week4Title:"Misurare",week4Text:"Leggere i primi segnali del funnel, condividere criticità e insight e concordare le azioni successive.",roadmapNote:"Un modello proposto di onboarding, da adattare alle reali priorità e al contesto operativo del team.",
     mappingKicker:"TALENT MAPPING LIVE",mappingOverline:"UN ESEMPIO CONCRETO DI SOURCING",mappingTitle:"Dalla vacancy<br>alla <em>talent map.</em>",mappingLead:"Uno sguardo ad alcune posizioni pubblicate sul portale carriere di Pillar, trasformate in una prima strategia di sourcing. Profili e stringhe di ricerca sono ipotesi operative, non dati su candidati reali.",roleLive:"ANNUNCIO PUBBLICO · VERIFICATO",roleHypothesis:"POSSIBILE ESIGENZA FUTURA",aeSummary:"Gestire l'intero ciclo commerciale: discovery, demo del prodotto, business case, negoziazione e chiusura con le imprese del settore edile.",profileLabel:"PROFILO TALENT PROPOSTO",aeProfile:"Account Executive B2B SaaS con esperienza nella gestione completa della trattativa, discovery consulenziale e vendita a PMI o decisori operativi.",bdrSummary:"Generare e qualificare nuove opportunità commerciali, trasformando la prospezione outbound in conversazioni di valore per il team Sales.",bdrProfile:"BDR o SDR con esperienza di outbound prospecting, qualificazione lead, follow-up strutturato e gestione disciplinata del CRM in contesti B2B.",roleLink:"Vedi le posizioni aperte Pillar ↗",mappingNote:"Snapshot delle posizioni verificato il 25 novembre 2026 sul portale pubblico di Pillar. La disponibilità può cambiare. Le stringhe di ricerca sono punti di partenza da affinare con la scorecard del team.",
     contactKicker:"IL PROSSIMO PASSO",contactOverline:"COSTRUIAMO CIÒ CHE VIENE DOPO",contactTitle:"I grandi team<br>non nascono<br><em>per caso.</em>",contactText:"Mi piacerebbe confrontarmi su come un approccio strutturato e proattivo alla Talent Acquisition possa supportare la prossima fase di crescita.",footerNote:"PROPOSTA INDIPENDENTE DI CANDIDATURA · NON È IL SITO UFFICIALE DI PILLAR",backTop:"TORNA SU ↑"
   }
@@ -57,6 +57,29 @@ Object.assign(translations.it, {
   funnelDetailTitle:"Raccolta fabbisogno e scorecard",funnelDetailCopy:"Allineare contesto di business, competenze essenziali, risultati attesi, range retributivo, tempistiche e responsabilità del processo prima di avviare la ricerca.",funnelDetailKpi:"Completezza del brief · allineamento stakeholder · tempo di avvio",kpiLabel:"INDICATORI DA MONITORARE",funnelDisclaimer:"Modello operativo esemplificativo, non dati storici di conversione. Target e soglie vanno concordati con il team di selezione.",
   funnelPrinciple1:"NESSUNA FASE SENZA FEEDBACK",funnelPrinciple2:"FEEDBACK STRUTTURATO",funnelPrinciple3:"DECISIONI BASATE SU EVIDENZE",funnelPrinciple4:"ATTENZIONE AL CANDIDATO",
   faqKicker:"DOMANDE E RISPOSTE",faqOverline:"RISPOSTE CHIARE PER PERSONE E MOTORI DI RICERCA",faqTitle:"Talent Acquisition,<br><em>senza giri di parole.</em>",faqQ1:"Che cosa fa una Talent Acquisition Specialist?",faqA1:"Una Talent Acquisition Specialist gestisce il processo di selezione end-to-end: comprende le esigenze del business, definisce i profili, ricerca e valuta i candidati, coordina i colloqui, supporta le offerte e monitora le performance del recruiting.",faqQ2:"Che cosa si intende per recruiting tecnico?",faqA2:"Il recruiting tecnico individua e valuta candidati per ruoli specialistici in software, IT, ingegneria, sistemi embedded e tecnologie digitali. Richiede la capacità di tradurre requisiti tecnici in criteri di ricerca e valutazione chiari.",faqQ3:"Come si costruisce un funnel di recruiting efficace?",faqA3:"Si parte dal brief e dalla scorecard, si mappa il mercato dei talenti, si attivano i canali di sourcing, si qualificano i candidati, si coordinano colloqui strutturati, si gestiscono le offerte e si misurano conversioni, tempi di feedback e candidate experience in ogni fase.",faqQ4:"Dove si trova Stephanie De Padova?",faqA4:"Stephanie De Padova si trova a Torino, in Italia, ed è aperta a opportunità a Torino, Milano e da remoto sul territorio italiano.",faqQ5:"Stephanie ha esperienza nel recruiting B2B SaaS?",faqA5:"L'esperienza di recruiting consolidata è in ambito IT e Engineering. Il B2B SaaS è un'area di crescita trasferibile: porta competenze di recruiting end-to-end, sourcing, gestione degli stakeholder e digital strategy, con trasparenza rispetto alla curva di apprendimento specifica del settore."
+});
+Object.assign(translations.it, {
+  proofYears:"ANNI NELLA TALENT ACQUISITION",
+  proofSearches:"RICERCHE ATTIVE",
+  proofRoles:"POSIZIONI IN CONTEMPORANEA",
+  visualCore:"AL CENTRO",
+  visualUnderstand:"COMPRENDERE",
+  visualUnderstandSub:"Business e ruoli",
+  visualConnect:"CONNETTERE",
+  visualConnectSub:"Talenti e sourcing",
+  visualDeliver:"REALIZZARE",
+  visualDeliverSub:"Assunzioni e insight",
+  aeRoleLink:"Vedi l'annuncio pubblico Account Executive ↗",
+  bdrStatus:"Ipotesi di sourcing · nessuna vacancy pubblica identificata",
+  pillarStat1:"AZIENDE CHE UTILIZZANO PILLAR",
+  pillarStat2:"ORE RISPARMIATE IN MEDIA OGNI SETTIMANA",
+  pillarStat3:"SISTEMA OPERATIVO CON AI",
+  pillarSource:"Dati dichiarati sul sito ufficiale di Pillar.",
+  week1Text:"Incontrare gli stakeholder, conoscere prodotto e team, raccogliere i fabbisogni e restituire una mappa iniziale delle priorità.",
+  week2Text:"Concordare scorecard e criteri di valutazione, ordinare le vacancy per priorità e impostare una dashboard di partenza.",
+  week3Text:"Avviare sourcing mirato, documentare aziende target e bacini di talenti, testare messaggi e canali.",
+  week4Text:"Leggere i primi segnali del funnel, condividere criticità e insight e concordare le azioni successive.",
+  mappingNote:"La posizione Account Executive è collegata all'annuncio pubblico consultato; disponibilità e dettagli possono cambiare."
 });
 const funnelStages = [
  {title:"Role intake & scorecard",copy:"Align on business context, must-have skills, outcomes, compensation range, timeline and interview ownership before launching a search.",kpi:"Brief completeness · stakeholder alignment · time to launch",itTitle:"Raccolta fabbisogno e scorecard",itCopy:"Allineare contesto di business, competenze essenziali, risultati attesi, range retributivo, tempistiche e responsabilità del processo prima di avviare la ricerca.",itKpi:"Completezza del brief · allineamento stakeholder · tempo di avvio"},
@@ -83,6 +106,12 @@ function setLanguage(next){
  const description=next==="it"?"Stephanie De Padova è Talent Acquisition Specialist a Torino, specializzata in recruiting IT e Engineering, talent sourcing, market mapping e processi di selezione strutturati.":"Stephanie De Padova is a Talent Acquisition Specialist in Turin, Italy, focused on IT & Engineering recruitment, technical sourcing, talent mapping and scalable hiring processes.";
  document.querySelector('meta[name="description"]')?.setAttribute("content",description);
  document.querySelector('meta[property="og:locale"]')?.setAttribute("content",next==="it"?"it_IT":"en_GB");
+  const socialTitle=next==="it"?"Stephanie De Padova | Talent Acquisition IT & Engineering":"Stephanie De Padova | Talent Acquisition for IT & Engineering";
+  const socialDescription=next==="it"?"Recruiting IT ed Engineering, ricerca di profili tecnici, talent mapping e un piano concreto di selezione.":"IT and Engineering recruitment, technical sourcing, talent mapping and a practical hiring plan.";
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content",socialTitle);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content",socialDescription);
+  document.querySelector('meta[name="twitter:title"]')?.setAttribute("content",socialTitle);
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content",socialDescription);
  const activeStage=document.querySelector(".funnel-stage.active");
  if(activeStage){
   const stage=funnelStages[Number(activeStage.dataset.stage)];
