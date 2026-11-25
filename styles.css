@@ -252,3 +252,10 @@ nav a,.text-link{font-size:15px}
 .hero .hero-bottom span:first-child{font-weight:600;}
 @media(max-width:800px){.hero .hero-bottom{font-size:10px;letter-spacing:.08em;}}
 @media(max-width:520px){.hero .hero-bottom{font-size:9px;letter-spacing:.055em;gap:10px;}.hero .hero-bottom span:first-child{max-width:calc(100% - 52px);}}
+
+
+/* Larger hero closing statement on every screen size */
+.hero .hero-bottom{font-size:16px;letter-spacing:.09em;line-height:1.5;}
+.hero .hero-bottom span:first-child{font-weight:700;}
+@media(max-width:800px){.hero .hero-bottom{font-size:14px;letter-spacing:.065em;}}
+@media(max-width:520px){.hero .hero-bottom{font-size:12px;letter-spacing:.035em;gap:10px;}.hero .hero-bottom span:first-child{max-width:calc(100% - 46px);}}
