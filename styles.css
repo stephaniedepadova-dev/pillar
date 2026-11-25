@@ -344,8 +344,8 @@ nav a,.text-link{font-size:15px}
   }
   .closing-foot span:first-child{
     display:block;
-    width:76px;
-    max-width:76px;
+    width:100px;
+    max-width:100px;
     line-height:1.55;
   }
 }
