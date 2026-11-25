@@ -161,4 +161,28 @@ nav a,.text-link{font-size:15px}
 .hero-proof strong{font-size:26px;line-height:1;letter-spacing:-.07em;color:#fff}.hero-proof strong span{color:var(--orange)}.hero-proof small{font:8px/1.5 var(--mono);letter-spacing:.08em;color:#aebbd0}
 .role-status-note{margin-top:20px!important;padding-top:14px;border-top:1px solid rgba(16,29,53,.13);font:8px/1.7 var(--mono)!important;letter-spacing:.07em;color:#8a6570!important;min-height:0!important}.company-source{margin-top:15px}
 @media(max-width:520px){.hero-proof{gap:7px;margin:23px 0 26px;padding:14px 0}.hero-proof strong{font-size:22px}.hero-proof small{font-size:7px;letter-spacing:.04em}}
-.role-status-note{font-size:7px!important}}
+
+
+/* Hero restore hotfix: explicit desktop layout and visible blueprint */
+@media(min-width:801px){
+  .hero{display:grid!important;grid-template-columns:minmax(0,1.02fr) minmax(340px,.98fr)!important;column-gap:5%!important;align-items:center!important}
+  .hero-copy{grid-column:1;max-width:570px}
+  .hero-visual{display:block!important;visibility:visible!important;grid-column:2;width:min(100%,590px)!important;max-width:590px;justify-self:center!important;align-self:center;margin:0!important;opacity:1!important}
+  .blueprint-frame{display:block!important;visibility:visible!important}
+  .blueprint-art{display:block!important;width:100%!important;height:auto!important;max-height:620px}
+}
+.hero-proof{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;max-width:500px;margin:28px 0 30px!important;padding:17px 0!important;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)}
+.hero-proof>div{display:flex!important;flex-direction:column!important;gap:7px!important;min-width:0;border-right:1px solid rgba(255,255,255,.16);padding-right:10px}
+.hero-proof>div:last-child{border:0;padding-right:0}
+.hero-proof strong{display:block;font-size:26px;line-height:1;color:#fff}
+.hero-proof small{display:block;font:8px/1.5 var(--mono);letter-spacing:.08em;color:#aebbd0}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr!important}
+ .hero-visual{display:block!important;visibility:visible!important;width:min(88%,460px)!important;max-width:460px;margin:58px auto 12px!important}
+ .blueprint-frame{display:block!important}
+}
+@media(max-width:520px){
+ .hero-proof{gap:7px!important;margin:23px 0 26px!important;padding:14px 0!important}
+ .hero-proof strong{font-size:22px}
+ .hero-proof small{font-size:7px;letter-spacing:.04em}
+}
