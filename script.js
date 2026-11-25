@@ -12,14 +12,17 @@ const translations = {
   }
 };
 const toggle = document.querySelector("#language-toggle");
+const nodes = [...document.querySelectorAll("[data-i18n]")];
+const english = new Map(nodes.map(node => [node, node.innerHTML]));
 let language = "en";
-toggle?.addEventListener("click", () => {
-  language = language === "en" ? "it" : "en";
-  document.documentElement.lang = language;
-  toggle.innerHTML = language === "en" ? 'IT <span>↗</span>' : 'EN <span>↗</span>';
-  document.querySelectorAll("[data-i18n]").forEach(node => {
+function setLanguage(next) {
+  language = next;
+  document.documentElement.lang = next;
+  nodes.forEach(node => {
     const key = node.dataset.i18n;
-    if (language === "it" && translations.it[key]) node.innerHTML = translations.it[key];
-    else if (language === "en") window.location.reload();
+    node.innerHTML = next === "it" && translations.it[key] ? translations.it[key] : english.get(node);
   });
-});
+  toggle.innerHTML = next === "en" ? 'IT <span>↗</span>' : 'EN <span>↗</span>';
+  toggle.setAttribute("aria-label", next === "en" ? "Passa alla lingua italiana" : "Switch to English");
+}
+toggle?.addEventListener("click", () => setLanguage(language === "en" ? "it" : "en"));
