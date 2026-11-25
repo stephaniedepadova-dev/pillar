@@ -45,3 +45,11 @@ Expected URL: https://stephaniedepadova-dev.github.io/pillar/
 - Pillar career-page counts are a dated snapshot checked on 25 November 2026 and can change.
 - Candidate funnel stages and KPI signals are an operating proposal, not historical company data.
 - B2B SaaS is described as a growth area, not claimed as established core recruitment experience.
+
+
+## Hybrid candidate storytelling
+- The hero combines the original navy/orange blueprint language with a compact construction-site sign and a direct sourcing-led hook.
+- The live talent mapping section now includes three adjacent talent pools for commercial hiring in construction: construction software, building materials, and SMB SaaS/fintech.
+- Includes a Boolean starting point and two tailored outreach examples with copy-to-clipboard actions.
+- Talent pools and named companies are explicitly framed as research hypotheses and examples to investigate, not a validated market map, candidate list, or endorsement.
+- Safety yellow is used as a restrained secondary accent; the original visual identity remains the foundation.
