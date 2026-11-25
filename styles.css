@@ -135,3 +135,19 @@ nav a,.text-link{font-size:15px}
  .coordinate-one{left:-14px;}
  .coordinate-two{right:-14px;}
 }
+
+/* Hero artwork: make the blueprint the visual anchor, not a floating decoration */
+@media(min-width:801px){
+ .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:4%;}
+ .hero-visual{width:min(100%,590px);justify-self:center;margin:0;}
+ .blueprint-frame{padding:24px 26px 22px;background:rgba(255,255,255,.035);}
+ .blueprint-art{max-height:620px;}
+ .label-bottom{text-align:center;padding:0;margin-top:8px;letter-spacing:.14em;}
+ .hero-stamp{display:none;}
+ .coordinate-one{left:-28px;}
+ .coordinate-two{right:-28px;}
+}
+@media(max-width:800px){
+ .hero-stamp{display:none;}
+ .label-bottom{text-align:center;padding:0;margin-top:8px;}
+}
