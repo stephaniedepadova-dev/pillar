@@ -14,3 +14,32 @@
 .company-context{padding-top:100px;padding-bottom:105px;background:#f1f0eb}.company-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:9%;margin-top:42px}.company-grid h2{font-size:clamp(37px,4.5vw,57px);line-height:1.05;letter-spacing:-.065em;margin:0}.company-grid h2 em{font-style:normal;color:var(--orange)}.company-copy>p{font-size:13px;line-height:1.9;color:#657286;margin:0 0 27px}.company-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0;margin-bottom:18px}.company-stats div{display:flex;flex-direction:column;gap:6px;border-right:1px solid var(--line);padding:0 12px}.company-stats div:first-child{padding-left:0}.company-stats div:last-child{border:0}.company-stats b{font-size:32px;letter-spacing:-.06em;color:var(--navy)}.company-stats span{font:8px/1.5 var(--mono);color:#788496;letter-spacing:.08em}.company-copy .company-source{font:8px/1.8 var(--mono);color:#7c8795}.company-source a{color:var(--navy);text-decoration:underline;text-underline-offset:3px}@media(max-width:700px){.company-context{padding-top:78px;padding-bottom:82px}.company-grid{grid-template-columns:1fr;gap:25px}.company-stats b{font-size:29px}.company-stats span{font-size:7px}}
 
 .role-process{margin-top:18px;padding:16px;border:1px solid rgba(16,29,53,.14)}.role-process>b{font:8px var(--mono);letter-spacing:.1em;color:#d95f34}.role-process ol{list-style:none;counter-reset:role;display:grid;grid-template-columns:repeat(5,1fr);gap:7px;padding:0;margin:13px 0}.role-process li{counter-increment:role;font-size:9px;line-height:1.5;color:#586679;border-top:2px solid var(--orange);padding-top:8px}.role-process li:before{content:"0" counter(role) " / ";font:8px var(--mono);color:#d95f34;display:block;margin-bottom:4px}.role-process a{font-size:9px;color:var(--navy);text-decoration:underline;text-underline-offset:3px}@media(max-width:520px){.role-process ol{grid-template-columns:1fr 1fr}.role-process li{font-size:10px}}
+
+/* Hybrid identity: preserve the navy/orange blueprint and add a restrained construction-site signature */
+.hero-hook{display:inline-block;margin:0 0 18px;padding:8px 11px;background:#ffc928;color:#151515;font:700 9px/1.35 var(--mono);letter-spacing:.08em}
+.site-board{max-width:490px;margin-top:25px;background:#f7f6f1;color:#17243a;border:3px solid #151515;box-shadow:7px 7px 0 #ffc928;transform:rotate(-.45deg)}
+.site-board-head{background:#151515;color:#ffc928;padding:9px 13px;font:700 10px/1.4 var(--mono);letter-spacing:.07em}
+.site-board dl{margin:0;padding:7px 13px 10px}
+.site-board dl div{display:grid;grid-template-columns:105px minmax(0,1fr);gap:10px;padding:7px 0;border-bottom:1px solid #dedbd2}
+.site-board dl div:last-child{border:0}
+.site-board dt{font:8px/1.5 var(--mono);color:#697486;text-transform:uppercase}
+.site-board dd{margin:0;font-size:10px;line-height:1.5;font-weight:700}
+.field-work{margin-top:34px;padding:27px;background:#f5f3ee;border:1px solid rgba(16,29,53,.15)}
+.field-work-heading{max-width:700px;margin-bottom:24px}
+.field-work-label,.pool-number,.outreach-card>b{font:8px var(--mono);letter-spacing:.12em;color:#d95f34}
+.field-work-heading h3{font-size:clamp(23px,3vw,32px);letter-spacing:-.05em;margin:10px 0}
+.field-work-heading>p{font-size:12px;line-height:1.8;color:#687486;margin:0}
+.pool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.pool-card{background:#fff;border:1px solid rgba(16,29,53,.12);padding:19px;min-width:0}
+.pool-card h4{font-size:16px;line-height:1.3;letter-spacing:-.03em;margin:13px 0 9px}
+.pool-card p{font-size:11px;line-height:1.8;color:#647184;margin:0 0 14px}
+.pool-card small{display:block;font:8px/1.7 var(--mono);color:#788494}
+.field-work-tools{display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;margin-top:17px}
+.field-tool{min-width:0}
+.field-tool>pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--navy);color:#d9e3f0;padding:15px;margin:10px 0;font:9px/1.8 var(--mono)}
+.copy-button{border:1px solid var(--orange);background:transparent;color:var(--navy);padding:9px 12px;font:700 9px var(--mono);cursor:pointer}
+.copy-button:hover{background:var(--orange);color:#fff}
+.outreach-card{background:#fff;border:1px solid rgba(16,29,53,.12);padding:14px;margin-top:10px}
+.outreach-card p{font-size:10px;line-height:1.8;color:#566274;margin:10px 0}
+.field-work-note{font:8px/1.8 var(--mono);color:#788494;margin:18px 0 0}
+@media(max-width:700px){.site-board{max-width:100%;margin-top:22px;transform:none}.site-board dl div{grid-template-columns:92px minmax(0,1fr)}.field-work{padding:19px}.pool-grid,.field-work-tools{grid-template-columns:1fr}.pool-card{padding:18px}.field-tool>pre{font-size:8px}}
