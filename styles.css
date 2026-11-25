@@ -355,16 +355,16 @@ nav a,.text-link{font-size:15px}
 
 
 /* Final typography adjustments requested */
-.hero .hero-bottom{
-  font-size:14px!important;
+.hero .hero-bottom span:first-child{
+  font-size:12px!important;
   line-height:1.45!important;
-  letter-spacing:.045em!important;
+  letter-spacing:.04em!important;
 }
 @media(max-width:800px){
-  .hero .hero-bottom{font-size:12px!important;letter-spacing:.035em!important;}
+  .hero .hero-bottom span:first-child{font-size:10px!important;letter-spacing:.03em!important;}
 }
 @media(max-width:520px){
-  .hero .hero-bottom{font-size:11px!important;letter-spacing:.02em!important;}
+  .hero .hero-bottom span:first-child{font-size:9px!important;letter-spacing:.02em!important;}
 }
 .roadmap-note{
   font-size:17px!important;
