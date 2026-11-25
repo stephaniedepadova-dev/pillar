@@ -1,5 +1,38 @@
 const translations = {
   it: {
+    heroHook: "MI AVETE CHIESTO DI FARE SOURCING. ECCO IL MIO CANTIERE.",
+    boardTitle: "CANTIERE · TALENT ACQUISITION @ PILLAR",
+    boardClientLabel: "COMMITTENTE",
+    boardClient: "Pillar · tecnologia per l'edilizia",
+    boardBuilderLabel: "IMPRESA ESECUTRICE",
+    boardProjectLabel: "OGGETTO DEI LAVORI",
+    boardProject: "Costruire un motore di talenti per chi costruisce",
+    boardMaterialsLabel: "MATERIALI",
+    boardMaterials: "Oltre 4 anni in Talent Acquisition · 6 anni in digital strategy",
+    boardBaseLabel: "BASE",
+    boardBase: "Torino · disponibile per Milano e lavoro da remoto in Italia",
+    fieldWorkLabel: "LAVORO SUL CAMPO · IPOTESI DI SOURCING",
+    fieldWorkTitle: "Tre bacini di talenti. Competenze diverse.",
+    fieldWorkLead: "Per un ruolo commerciale rivolto alle PMI dell'edilizia, esplorerei mercati adiacenti invece di cercare soltanto persone con lo stesso job title.",
+    pool1Title: "Venditori di software per l'edilizia",
+    pool1Text: "Account Executive e area manager di aziende che sviluppano software per costruzioni o soluzioni tecniche. Conoscono il linguaggio delle imprese e dei processi operativi.",
+    pool1Examples: "Esempi di mercato da approfondire: TeamSystem · ACCA software",
+    pool2Title: "Vendite di materiali edili",
+    pool2Text: "Commerciali tecnici che visitano i cantieri e costruiscono relazioni con i titolari delle imprese. Forte vicinanza al settore; le competenze SaaS andrebbero verificate.",
+    pool2Examples: "Esempi di mercato da approfondire: Mapei · Kerakoll",
+    pool3Title: "SaaS e fintech per PMI",
+    pool3Text: "Commerciali abituati a vendite consulenziali, prospezione e obiezioni da parte di decisori di piccole imprese. La conoscenza dell'edilizia andrebbe verificata.",
+    pool3Examples: "Esempi di mercato da approfondire: Qonto · Satispay",
+    fieldBooleanLabel: "BOOLEAN · PUNTO DI PARTENZA",
+    copyBoolean: "Copia Boolean",
+    fieldOutreachLabel: "MESSAGGI · DUE APPROCCI DIVERSI",
+    outreach1Label: "BACINO 01 · VENDITA SOFTWARE",
+    outreach1: "Ciao Luca, ho notato la tua esperienza nella vendita di software alle imprese edili. Pillar sta sviluppando una tecnologia che aiuta le aziende del settore a gestire gli aspetti operativi del lavoro. Mi piacerebbe conoscere la tua esperienza in questo mercato e raccontarti meglio il progetto. Ti andrebbe una breve conversazione?",
+    copyMessage1: "Copia messaggio",
+    outreach2Label: "BACINO 02 · VENDITA MATERIALI",
+    outreach2: "Ciao Giulia, le relazioni che hai costruito con le imprese edili potrebbero offrire una prospettiva preziosa a un'azienda tecnologica che lavora con questo settore. Pillar sviluppa strumenti per le imprese e mi piacerebbe capire come la tua conoscenza del mercato potrebbe tradursi in un ruolo commerciale. Ti andrebbe un confronto informale?",
+    copyMessage2: "Copia messaggio",
+    fieldWorkNote: "Queste sono ipotesi di sourcing, non una mappatura validata né un bacino di candidati verificato. I nomi delle aziende sono esempi da approfondire, non endorsement. Prima di estendere la ricerca, verificherei pertinenza dei profili, tasso di risposta e qualità.",
     topline:"TALENT ACQUISITION · PROPOSTA STRATEGICA",navApproach:"Approccio",navBlueprint:"Metodo",navPlan:"Primi 30 giorni",navContact:"Contatti",
     heroEyebrow:"UN PROGETTO DI TALENT ACQUISITION",heroTitle:"COSTRUIRE<br>IL MOTORE<br><em>DEL TALENTO.</em>",heroLead:"Non mi limito a coprire posizioni. Costruisco pipeline di talenti che aiutano i team a crescere.",heroCta:"Scopri il mio approccio",heroSecondary:"Parliamone",heroBottom:"UN SISTEMA PEOPLE-FIRST, CON OBIETTIVI DI BUSINESS.",
     introKicker:"IL PROFILO",introOverline:"STRATEGIA E OPERATIVITÀ",introTitle:"La Talent Acquisition non dovrebbe essere solo un processo di selezione. <em>Dovrebbe essere un sistema di crescita.</em>",introText:"Sono Stephanie De Padova, Talent Acquisition Specialist con focus su IT & Engineering. Unisco recruiting end-to-end, sourcing mirato e mentalità digitale per trasformare esigenze di selezione complesse in strategie chiare e concrete.",signatureRole:"TALENT ACQUISITION SPECIALIST",
@@ -60,6 +93,7 @@ function setLanguage(next){
   }
  }
 }
+document.querySelectorAll(".copy-button").forEach(button=>button.addEventListener("click",async()=>{const target=document.getElementById(button.dataset.copy);if(!target)return;const old=button.textContent;try{await navigator.clipboard.writeText(target.textContent.trim());button.textContent=language==="it"?"Copiato":"Copied";}catch(error){button.textContent=language==="it"?"Copia manualmente":"Copy manually";}window.setTimeout(()=>{button.textContent=old;},1600);}));
 toggle?.addEventListener("click",()=>setLanguage(language==="en"?"it":"en"));
 menu?.addEventListener("click",()=>{const open=nav.classList.toggle("is-open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?(language==="it"?"CHIUDI":"CLOSE"):(language==="it"?"MENU":"MENU");});
 nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("is-open");menu?.setAttribute("aria-expanded","false");if(menu)menu.textContent="MENU";}));
