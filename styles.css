@@ -349,3 +349,28 @@ nav a,.text-link{font-size:15px}
     line-height:1.55;
   }
 }
+
+
+/* Final typography adjustments requested */
+.hero .hero-bottom{
+  font-size:14px!important;
+  line-height:1.45!important;
+  letter-spacing:.045em!important;
+}
+@media(max-width:800px){
+  .hero .hero-bottom{font-size:12px!important;letter-spacing:.035em!important;}
+}
+@media(max-width:520px){
+  .hero .hero-bottom{font-size:11px!important;letter-spacing:.02em!important;}
+}
+.roadmap-note{
+  font-size:17px!important;
+  line-height:1.85!important;
+  max-width:820px;
+}
+@media(max-width:800px){
+  .roadmap-note{font-size:16px!important;line-height:1.8!important;}
+}
+@media(max-width:520px){
+  .roadmap-note{font-size:15px!important;line-height:1.75!important;}
+}
