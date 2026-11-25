@@ -109,3 +109,29 @@ nav a,.text-link{font-size:15px}
  .boolean code,.field-tool>pre{font-size:12px}
  .site-board dd{font-size:15px}
 }
+
+/* Hero artwork: integrate the technical illustration into the layout */
+.hero{grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);column-gap:5%;}
+.hero-visual{width:min(100%,540px);justify-self:center;margin-right:0;}
+.blueprint-frame{padding:20px 22px 18px;background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.3);}
+.blueprint-art{max-height:570px;}
+.label-bottom{text-align:left;padding-right:112px;margin-top:4px;}
+.hero-stamp{width:92px;height:92px;right:-16px;bottom:-22px;transform:rotate(4deg);}
+.coordinate-one{left:-24px;}
+.coordinate-two{right:-23px;}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;column-gap:0;}
+ .hero-visual{width:min(88%,460px);justify-self:center;margin:58px auto 12px;}
+ .blueprint-frame{padding:17px 18px 16px;}
+ .blueprint-art{max-height:none;}
+ .hero-stamp{width:82px;height:82px;right:-12px;bottom:-18px;}
+ .label-bottom{padding-right:95px;}
+}
+@media(max-width:520px){
+ .hero-visual{width:91%;margin-top:48px;}
+ .blueprint-frame{padding:14px 14px 13px;}
+ .hero-stamp{width:72px;height:72px;right:-9px;bottom:-14px;}
+ .label-bottom{padding-right:80px;}
+ .coordinate-one{left:-14px;}
+ .coordinate-two{right:-14px;}
+}
