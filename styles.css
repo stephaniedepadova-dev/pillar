@@ -186,3 +186,24 @@ nav a,.text-link{font-size:15px}
  .hero-proof strong{font-size:22px}
  .hero-proof small{font-size:7px;letter-spacing:.04em}
 }
+
+
+/* Hero typography refinement */
+.hero-hook{
+  font-size:10px!important;
+  line-height:1.45!important;
+  letter-spacing:.075em!important;
+  padding:9px 12px!important;
+  margin:0 0 20px!important;
+  color:#151515!important;
+  background:#ffc928!important;
+}
+.hero-proof small{
+  font-size:9px!important;
+  line-height:1.55!important;
+  letter-spacing:.055em!important;
+}
+@media(max-width:520px){
+  .hero-hook{font-size:9px!important;padding:8px 10px!important}
+  .hero-proof small{font-size:8px!important}
+}
