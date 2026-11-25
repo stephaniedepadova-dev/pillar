@@ -287,3 +287,32 @@ nav a,.text-link{font-size:15px}
 .live-mapping .mapping-footnote:before{content:"RESEARCH NOTE";display:block;margin-bottom:10px;color:#d95f34;font:700 10px/1.4 var(--mono);letter-spacing:.14em;}
 @media(max-width:800px){.live-mapping .mapping-footnote{margin-top:32px;padding:21px 22px 21px 24px;font-size:13px;line-height:1.8;}}
 @media(max-width:520px){.live-mapping .mapping-footnote{margin-top:28px;padding:19px 17px 19px 19px;font-size:12px;line-height:1.8;}.live-mapping .mapping-footnote:before{font-size:9px;margin-bottom:8px;}}
+
+
+/* FINAL TYPE SCALE — requested statements, principles and company proof points */
+/* Funnel disclaimer */
+.funnel-section .detail-note{font-size:15px!important;line-height:1.8!important;letter-spacing:0!important;}
+/* Four operating principles */
+.funnel-section .funnel-principles span{font-size:13px!important;line-height:1.5!important;letter-spacing:.07em!important;font-weight:700!important;}
+/* Hero people-first statement */
+.hero .hero-bottom{font-size:18px!important;line-height:1.5!important;letter-spacing:.075em!important;}
+.hero .hero-bottom span:first-child{font-weight:700!important;}
+/* Pillar stats labels and source / links */
+.company-context .company-stats span{font-size:13px!important;line-height:1.55!important;letter-spacing:.055em!important;font-weight:700!important;}
+.company-context .company-source{font-size:12px!important;line-height:1.85!important;}
+.company-context .company-source a{font-size:inherit!important;}
+@media(max-width:800px){
+ .funnel-section .detail-note{font-size:14px!important;}
+ .funnel-section .funnel-principles span{font-size:12px!important;}
+ .hero .hero-bottom{font-size:15px!important;letter-spacing:.045em!important;}
+ .company-context .company-stats span{font-size:11px!important;letter-spacing:.035em!important;}
+ .company-context .company-source{font-size:11px!important;}
+}
+@media(max-width:520px){
+ .funnel-section .detail-note{font-size:13px!important;line-height:1.75!important;}
+ .funnel-section .funnel-principles span{font-size:11px!important;line-height:1.5!important;}
+ .hero .hero-bottom{font-size:13px!important;letter-spacing:.025em!important;gap:8px;}
+ .hero .hero-bottom span:first-child{max-width:calc(100% - 48px);}
+ .company-context .company-stats span{font-size:10px!important;line-height:1.5!important;letter-spacing:.02em!important;}
+ .company-context .company-source{font-size:10px!important;line-height:1.75!important;}
+}
