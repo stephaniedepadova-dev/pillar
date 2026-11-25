@@ -49,6 +49,16 @@ function setLanguage(next){
  const description=next==="it"?"Stephanie De Padova è Talent Acquisition Specialist a Torino, specializzata in recruiting IT e Engineering, talent sourcing, market mapping e processi di selezione strutturati.":"Stephanie De Padova is a Talent Acquisition Specialist in Turin, Italy, focused on IT & Engineering recruitment, technical sourcing, talent mapping and scalable hiring processes.";
  document.querySelector('meta[name="description"]')?.setAttribute("content",description);
  document.querySelector('meta[property="og:locale"]')?.setAttribute("content",next==="it"?"it_IT":"en_GB");
+ const activeStage=document.querySelector(".funnel-stage.active");
+ if(activeStage){
+  const stage=funnelStages[Number(activeStage.dataset.stage)];
+  if(stage){
+   document.querySelector("#funnel-detail-index").textContent=(next==="it"?"FASE ":"STAGE ")+String(Number(activeStage.dataset.stage)+1).padStart(2,"0")+" / 07";
+   document.querySelector("#funnel-detail-title").textContent=next==="it"?stage.itTitle:stage.title;
+   document.querySelector("#funnel-detail-copy").textContent=next==="it"?stage.itCopy:stage.copy;
+   document.querySelector("#funnel-detail-kpi").textContent=next==="it"?stage.itKpi:stage.kpi;
+  }
+ }
 }
 toggle?.addEventListener("click",()=>setLanguage(language==="en"?"it":"en"));
 menu?.addEventListener("click",()=>{const open=nav.classList.toggle("is-open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?(language==="it"?"CHIUDI":"CLOSE"):(language==="it"?"MENU":"MENU");});
