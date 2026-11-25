@@ -402,3 +402,20 @@ nav a,.text-link{font-size:15px}
   .voice-player{margin-top:14px;padding:11px 12px 8px;}
   .voice-player-label{font-size:7px;}
 }
+
+
+/* Voice-player label spacing and responsive typography */
+.voice-player-label{
+  margin-bottom:12px!important;
+  font-size:7px!important;
+  letter-spacing:.10em!important;
+}
+@media(min-width:801px){
+  .voice-player-label{font-size:7px!important;}
+}
+@media(max-width:800px){
+  .voice-player-label{font-size:6px!important;letter-spacing:.085em!important;margin-bottom:11px!important;}
+}
+@media(max-width:520px){
+  .voice-player-label{font-size:6px!important;letter-spacing:.07em!important;margin-bottom:10px!important;}
+}
