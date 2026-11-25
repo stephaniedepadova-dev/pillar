@@ -331,3 +331,21 @@ nav a,.text-link{font-size:15px}
 @media(max-width:520px){
   .roadmap-note{font-size:13px!important;line-height:1.7!important;}
 }
+
+
+/* Mobile-only line breaks for the hero proposal label and closing signature */
+@media(max-width:520px){
+  .hero .hero-hook{
+    display:block!important;
+    width:220px!important;
+    max-width:100%!important;
+    white-space:normal!important;
+    line-height:1.6!important;
+  }
+  .closing-foot span:first-child{
+    display:block;
+    width:76px;
+    max-width:76px;
+    line-height:1.55;
+  }
+}
