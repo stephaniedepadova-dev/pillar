@@ -43,3 +43,55 @@
 .outreach-card p{font-size:10px;line-height:1.8;color:#566274;margin:10px 0}
 .field-work-note{font:8px/1.8 var(--mono);color:#788494;margin:18px 0 0}
 @media(max-width:700px){.site-board{max-width:100%;margin-top:22px;transform:none}.site-board dl div{grid-template-columns:92px minmax(0,1fr)}.field-work{padding:19px}.pool-grid,.field-work-tools{grid-template-columns:1fr}.pool-card{padding:18px}.field-tool>pre{font-size:8px}}
+
+
+/* Readable editorial type scale: one consistent body face and clear hierarchy */
+body{font-size:16px;line-height:1.7}
+p{font-size:16px;line-height:1.8}
+nav a,.text-link{font-size:13px}
+.hero-lead{font-size:19px;line-height:1.75;max-width:450px}
+.intro-bottom>p,.blueprint-heading>p,.mapping-heading>p,.sal-heading>p,.funnel-heading>p,.month-heading>p:last-child,.company-copy>p{font-size:16px;line-height:1.85}
+.step p,.role-card>p:not(.role-location),.role-profile span,.sal-card li,.funnel-detail>p,.detail-kpi span,.faq-list details p,.pool-card p,.outreach-card p{font-size:14px;line-height:1.8}
+.step h3{font-size:19px}
+.cap-list strong{font-size:16px}
+.cap-list small{font-size:13px;line-height:1.7}
+.timeline h3{font-size:19px}
+.timeline p{font-size:14px;line-height:1.8}
+.role-card h3{font-size:25px}
+.role-profile b,.boolean>b{font-size:10px}
+.boolean code{font-size:11px;line-height:1.85}
+.role-link{font-size:12px}
+.sal-card h3{font-size:21px}
+.funnel-stage b{font-size:13px}
+.funnel-detail h3{font-size:26px}
+.faq-list summary{font-size:16px;line-height:1.55}
+.site-board-head{font-size:11px}
+.site-board dt{font-size:10px}
+.site-board dd{font-size:13px;line-height:1.6}
+.hero-hook{font-size:10px}
+.field-work-heading>p{font-size:15px;line-height:1.8}
+.pool-card h4{font-size:18px}
+.pool-card p{font-size:14px;line-height:1.8}
+.pool-card small,.field-work-note{font-size:10px;line-height:1.8}
+.field-tool>pre{font-size:10px;line-height:1.85}
+.copy-button{font-size:11px}
+.outreach-card p{font-size:13px;line-height:1.8}
+.section-kicker,.section-overline,.eyebrow,.week,.role-index,.role-live,.role-hypothesis,.role-location,.sal-label,.field-work-label,.pool-number,.outreach-card>b,.company-source,.mapping-footnote,.closing-foot,.footer,.topline{font-size:10px}
+.role-hypothesis{font:500 10px/1.5 var(--mono);letter-spacing:.08em;color:#a36a1d;border:1px solid #e7c98a;padding:5px 8px;background:#fff8e8}
+.role-live{font:500 10px/1.5 var(--mono);letter-spacing:.08em}
+@media(max-width:700px){
+ body,p{font-size:15px;line-height:1.75}
+ .hero-lead{font-size:17px}
+ .intro-bottom>p,.blueprint-heading>p,.mapping-heading>p,.sal-heading>p,.funnel-heading>p,.month-heading>p:last-child,.company-copy>p{font-size:15px}
+ .step p,.role-card>p:not(.role-location),.role-profile span,.sal-card li,.funnel-detail>p,.detail-kpi span,.faq-list details p,.pool-card p,.outreach-card p,.timeline p{font-size:13px;line-height:1.8}
+ .site-board dd{font-size:12px}
+ .faq-list summary{font-size:15px}
+ .section-kicker,.section-overline,.eyebrow,.week,.role-index,.role-live,.role-hypothesis,.role-location,.sal-label,.field-work-label,.pool-number,.outreach-card>b,.company-source,.mapping-footnote,.closing-foot,.footer,.topline{font-size:9px}
+}
+@media(max-width:420px){
+ body,p{font-size:15px}
+ .hero-lead{font-size:16px}
+ .step p,.role-card>p:not(.role-location),.role-profile span,.sal-card li,.funnel-detail>p,.detail-kpi span,.faq-list details p,.pool-card p,.outreach-card p,.timeline p{font-size:12px}
+ .site-board dd{font-size:12px}
+ .boolean code{font-size:9px}
+}
