@@ -343,10 +343,13 @@ nav a,.text-link{font-size:15px}
     line-height:1.6!important;
   }
   .closing-foot span:first-child{
-    display:block;
-    width:100px;
-    max-width:100px;
-    line-height:1.55;
+    display:block!important;
+    flex:0 0 100px!important;
+    width:100px!important;
+    max-width:100px!important;
+    white-space:normal!important;
+    overflow-wrap:normal!important;
+    line-height:1.55!important;
   }
 }
 
